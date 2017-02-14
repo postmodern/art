@@ -6,6 +6,7 @@ require 'io/console'
 
 unless ARGV.length == 2 || ARGV.length == 3
   $stderr.puts "usage: #{File.basename($0)} INPUT MASK [OUTPUT]"
+  exit -1
 end
 
 input  = ARGV[0]
